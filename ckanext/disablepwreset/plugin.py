@@ -1,9 +1,9 @@
 import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 
-from ckanext.disablepwreset.logic.auth.get import request_reset, user_reset
-
 config = {}
+
+from ckanext.disablepwreset.logic.auth.get import request_reset, user_reset
 
 class ConfigError(Exception):
     pass
