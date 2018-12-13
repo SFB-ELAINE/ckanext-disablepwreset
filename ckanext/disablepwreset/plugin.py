@@ -30,12 +30,13 @@ class DisablePWResetPlugin(plugins.SingletonPlugin):
     def configure(self, main_config):
         # Our own config schema, defines default values
         schema = {
-            'ckanext.disablepwreset.permit_reset': {'default:' False},
+            'ckanext.disablepwreset.permit_reset': {'default': False},
         }
 
         errors = []
         for i in schema:
-            if (v = main_config.get(i, None)) is not None:
+            v = main_config.get(i, None)
+            if v is not None:
                 try:
                     config[i] = v
                 except ConfigError as e:
