@@ -5,10 +5,10 @@ import ckan.authz as authz
 
 from ckan.common import _
 
-from ckanext.disablepwreset.plugin import config
+import ckanext.disablepwreset.plugin as p
 
 def _permit_reset():
-    permit_reset = config['ckanext.disablepwreset.permit_reset']
+    permit_reset = p.config['ckanext.disablepwreset.permit_reset']
 
     if not permit_reset:
         return {'success': False, 'msg': _('Not authorized to '
