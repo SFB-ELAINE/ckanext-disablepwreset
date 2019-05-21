@@ -9,7 +9,7 @@
 ckanext-disablepwreset
 =============
 
-This extension enables or disables passwort reset requests depending on the configuration option:
+This extension enables or disables passwort reset requests depending on the configuration option::
 
     # If not present or set to "False" passwort reset is disabled
     ckanext.disablepwreset.permit_reset = False
@@ -24,6 +24,8 @@ This extension was tested with CKAN v2.8.2
 ------------
 Installation
 ------------
+
+In order to install the extension execute the following::
 
     git clone https://github.com/SFB-ELAINE/ckanext-disablepwreset.git
     cd ckanext-disablepwreset
