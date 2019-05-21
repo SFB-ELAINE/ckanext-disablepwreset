@@ -1,6 +1,3 @@
-.. You should enable this project on travis-ci.org and coveralls.io to make
-   these badges work. The necessary Travis and Coverage config files have been
-   generated for you.
 
 .. image:: https://travis-ci.org/SFB-ELAINE/ckanext-disablepwreset.svg?branch=master
     :target: https://travis-ci.org/SFB-ELAINE/ckanext-disablepwreset
@@ -12,63 +9,21 @@
 ckanext-disablepwreset
 =============
 
-.. Put a description of your extension here:
-   What does it do? What features does it have?
-   Consider including some screenshots or embedding a video!
+This extension enables or disables passwort reset requests depending on the configuration option:
 
+    # If not present or set to "False" passwort reset is disabled
+    ckanext.disablepwreset.permit_reset = False
 
 ------------
 Requirements
 ------------
 
-For example, you might want to mention here which versions of CKAN this
-extension works with.
+This extension was tested with CKAN v2.8.2
 
 
 ------------
 Installation
 ------------
-
-.. Add any additional install steps to the list below.
-   For example installing any non-Python dependencies or adding any required
-   config settings.
-
-To install ckanext-disablepwreset:
-
-1. Activate your CKAN virtual environment, for example::
-
-     . /usr/lib/ckan/default/bin/activate
-
-2. Install the ckanext-disablepwreset Python package into your virtual environment::
-
-     pip install ckanext-disablepwreset
-
-3. Add ``disablepwreset`` to the ``ckan.plugins`` setting in your CKAN
-   config file (by default the config file is located at
-   ``/etc/ckan/default/production.ini``).
-
-4. Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu::
-
-     sudo service apache2 reload
-
-
----------------
-Config Settings
----------------
-
-Document any optional config settings here. For example::
-
-    # The minimum number of hours to wait before re-checking a resource
-    # (optional, default: 24).
-    ckanext.disablepwreset.some_setting = some_default_value
-
-
-------------------------
-Development Installation
-------------------------
-
-To install ckanext-disablepwreset for development, activate your CKAN virtualenv and
-do::
 
     git clone https://github.com/SFB-ELAINE/ckanext-disablepwreset.git
     cd ckanext-disablepwreset
